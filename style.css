@@ -1,0 +1,910 @@
+:focus {
+    outline: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(15deg, #5AC6EA, #32B1E5, #179ED8, #D7F0F4, #77CBEF);
+}
+
+.logo {
+    width: 45%;
+}
+
+.mainTitulo {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: 8rem;
+    line-height: 0.4;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.tituloLibras {
+    font-size: 11rem;
+    display: inline-block;
+    position: relative;
+}
+
+.tituloLibras::before {
+    content: '';
+    position: absolute;
+    left: 39%;
+    top: 18%;
+    width: 17%;
+    height: 0.15em;
+    background: linear-gradient(45deg, #FFD854, #FFC257);
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.titulo, .tituloLibras {
+    font-weight: 700;
+}
+
+.divExpert {
+    background: whitesmoke;
+    position: relative;
+    border-radius: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+    cursor: default;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.divExpert:hover {
+    background: #733EFE;
+}
+
+.expert {
+    color: #32B1E5;
+    letter-spacing: 25px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: default;
+}
+
+.expert:hover {
+    color: whitesmoke;
+}
+
+
+.subTitulo {
+    font-weight: 300;
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.divButton {
+    width: 55%;
+    background: #733EFE;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-bottom: 5rem;
+    padding: 0.5rem;
+    transition: 0.5s ease-in-out, color 0.6s ease-in-out, transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.buttonComecar {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out, color 0.6s ease-in-out;
+}
+
+.divButton:hover {
+    background: linear-gradient(45deg, #733EFE, #32B1E5, whitesmoke);
+    transform: translateY(-5px) perspective(10px) matrix(1, 0, 0, 1, 0, 0); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.buttonComecar:hover {
+    text-decoration: none;
+    color: linear-gradient(45deg, #733EFE, #32B1E5, whitesmoke);
+}
+
+.containerGeral2 {
+    background: #202020;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divEnfasesGeral {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.enfaseParagrafo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.enfaseTitulo {
+    margin-top: -1rem;
+}
+
+.divImagem {
+    margin-top: 4.5rem;
+}
+
+.tituloCurso {
+    text-align: left;
+    font-size: 5rem;
+    color: #EF9301;
+    transition: 0.2s ease-in-out; /* Adicionado para animação suave */
+}
+
+.bordaCurso {
+    border: 2px solid #EE9701;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #11D3F6;
+    transition: 0.2s ease-in-out;
+}
+
+.textoCurso {
+    text-align: left;
+    transition: 0.2s ease-in-out; 
+}
+
+.textoCurso span {
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.bordaCurso:hover {
+    border: 4px solid #11D3F6;
+}
+
+.bordaCurso:hover,
+.bordaCurso:hover .textoCurso,
+.bordaCurso:hover  {
+    background: #EE9701;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bordaCurso:hover .textoCurso span {
+    color: whitesmoke;
+    background: #EE9701;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.tituloCurso.hover {
+    color: #11D3F6;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+
+
+
+/* Tabela */
+
+.imgCoracao {
+    position: absolute;
+    width: 3%;
+    height: auto;
+    transform: rotate(35deg);
+    top: 160%;
+    left: 23%;
+}
+
+.tabelaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.tableDiv {
+    background: whitesmoke;
+    padding-top: 2rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 4px solid #11D3F6; 
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: transparent;
+    border-top: transparent;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+th {
+    color: #202020;
+    background: whitesmoke;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #11D3F6; 
+}
+
+.thDisciplina {
+    background-color: whitesmoke;
+    color: #202020;
+    letter-spacing: 20px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+td[colspan="2"] {
+    background-color: #ED8A01;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: whitesmoke;
+    border-bottom: transparent;
+}
+
+td {
+    text-align: left;
+    color: #202020;
+    font-weight: 500;
+}
+
+.tdHorario {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+th:not([colspan="2"]) + th {
+    border-left: 4px solid #11D3F6;
+}
+
+td:not([colspan="2"]) + td {
+    border-left: 4px solid #11D3F6; 
+    border-bottom: 4px solid #11D3F6;
+}
+
+#noBotBorder {
+    border-bottom: transparent;
+}
+
+
+
+/* section modulos */
+.divTabelaImagem {
+    display: flex;
+    margin-top: 3rem;
+    border-radius: 100px;
+}
+
+
+
+
+.tituloModulos {
+    font-size: 7rem;
+    line-height: 0.9;
+    font-weight: 800;
+    color: #0053A1;
+    text-align: left;
+}
+
+
+
+
+/* tabela 2 */
+
+
+.tableDiv2 {
+    background: whitesmoke;
+    padding-top: 2rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.tableDiv2::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: #FFD000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.tableDiv2.custom-borders .table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableDiv2.custom-borders .table th, 
+.tableDiv2.custom-borders .table td {
+    border: 4px solid #FFD000; /* Borda vertical interna */
+    border-left: none; /* Remove borda esquerda */
+    border-top: transparent;
+}
+
+.tableDiv2.custom-borders .table th:last-child, 
+.tableDiv2.custom-borders .table td:last-child {
+    border-right: transparent;
+}
+
+.tableDiv2.custom-borders .table thead {
+    background-color: #FFD000; 
+}
+
+.tableDiv2.custom-borders .table th {
+    border-bottom: 4px solid #FFD000; /* Mantém a borda inferior */
+}
+
+
+
+
+
+
+/* tabela 3 */
+.tableDiv3 {
+    background: whitesmoke;
+    padding-top: 2rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.tableDiv3::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: #0067B5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.tableDiv3.blue-borders .table th, 
+.tableDiv3.blue-borders .table td {
+    border: 4px solid #0067B5; /* Borda vertical interna */
+    border-left: none; /* Remove borda esquerda */
+    border-top: transparent;
+}
+
+.tableDiv3.blue-borders .table th:last-child, 
+.tableDiv3.blue-borders .table td:last-child {
+    border-right: transparent;
+}
+
+.tableDiv3.blue-borders .table th {
+    border-bottom: 4px solid #0067B5; /* Mantém a borda inferior */
+}
+
+
+
+/* tabela 4 */
+.tableDiv4 {
+    background: whitesmoke;
+    padding-top: 2rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.tableDiv4::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: #E34B4B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.tableDiv4.red-borders .table th, 
+.tableDiv4.red-borders .table td {
+    border: 4px solid #E34B4B; 
+    border-left: none;
+    border-top: transparent;
+}
+
+.tableDiv4.red-borders .table th:last-child, 
+.tableDiv4.red-borders .table td:last-child {
+    border-right: transparent;
+}
+
+.tableDiv4.red-borders .table th {
+    border-bottom: 4px solid #E34B4B; 
+}
+
+
+
+
+
+/* tabela 5 */
+.tableDiv5 {
+    background: whitesmoke;
+    padding-top: 2rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.tableDiv5::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background: #7917E8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.tableDiv5.purple-borders .table th, 
+.tableDiv5.purple-borders .table td {
+    border: 4px solid #7917E8; 
+    border-left: none;
+    border-top: transparent;
+}
+
+.tableDiv5.purple-borders .table th:last-child, 
+.tableDiv5.purple-borders .table td:last-child {
+    border-right: transparent;
+}
+
+.tableDiv5.purple-borders .table th {
+    border-bottom: 4px solid #7917E8; 
+}
+
+/* fim tabelas */
+
+
+.divAviso {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.imgDanger {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 1%;
+    left: 65%;
+}
+
+.textoAviso {
+    color: #202020;
+    border: 2px solid #ED8A01;
+    padding: 1.5rem;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background: whitesmoke;
+    margin-top: 3rem;
+}
+
+.reticencias {
+    background: #ED8A01;
+    font-weight: 900;
+    letter-spacing: 10px;
+    padding-left: 0.5rem;
+    border-radius: 7px;
+    position: absolute;
+    font-size: 1rem;
+    padding-bottom: 0rem;
+    top: 83%;
+    left: 27%;
+}
+
+.divInformacoes1 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    opacity: 0.6;
+    margin-top: 10rem;
+}
+
+.divTituloInformacoes {
+    display: flex;
+    justify-content: end;
+    margin-right: 5rem;
+    position: relative;
+    top: 5%;
+}
+
+.tituloInformacoes1 {
+    font-size: 6rem;
+    color: #0067B5;
+    font-weight: 800;
+}
+
+.divInformacoes2 {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    padding: 1rem;
+    border-radius: 20px;
+    padding-top: 3rem;
+}
+
+.ulInformacoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.5rem; 
+}
+
+.paragrafoInformacoesLi {
+    color: #202020;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+}
+
+.tituloInformacoes, .tituloInformacoes2 {
+    color: #0067B5;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+.tituloInformacoes2 {
+    font-size: 2rem;
+}
+
+.paragrafoInformacoes, .obs, .obs span {
+    color: #202020;
+    font-weight: 700;
+}
+
+.obs span {
+    text-decoration: underline;
+}
+
+.divInvestimentoGeral {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.divInvestimento {
+    background: #0067B5;
+    padding: 2rem;
+    border-radius: 30px;
+    border: 2px solid whitesmoke;
+}
+
+.tituloInvestimento {
+    font-weight: 700;
+    text-align: center;
+}
+
+.italico {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.dorado {
+    color: goldenrod;
+    font-weight: 700;
+}
+
+.divFinal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.logoUnintese {
+    width: 25%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.unintese {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.divContatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaContatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: blueviolet;
+    padding: 1rem;
+    border-radius: 100px;
+    width: 50%;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.divSocial {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.divFone {
+    margin-top: 1rem;
+}
+
+.foneParagrafo {
+    font-weight: 700;
+}
+
+.iconesContato {
+	width: 40px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.texto-contato:hover .iconesContato {
+    transform: scale(1.2);
+	filter: invert(60%) sepia(20%) saturate(4448%) hue-rotate(226deg) brightness(90%) contrast(101%);
+}
+
+.textoContato {
+	color: whitesmoke;
+}
+
+.duvida, .contato {
+	color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 1366px) {
+    .tabelaContainer {
+        height: auto;
+        margin-top: 3rem;
+    }
+    
+    .containerModulos {
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .tituloLibras {
+        font-size: 7rem;
+    }
+
+    .divButton {
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+
+    .divEnfasesGeral {
+        margin-bottom: auto;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .divEnfases {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .enfaseParagrafo {
+        margin-top: 0rem;
+        align-items: center;
+    }
+
+    .divTituloInformacoes {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .containerModulos {
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .tituloInformacoes1 {
+        font-size: 3rem;
+    }
+
+    .divInvestimentoGeral {
+        flex-direction: column;
+    }
+
+    .unintese {
+        text-align: center;
+    }
+
+    .divTabelaImagem {
+        /* display: flex; */
+        margin-top: 3rem;
+        border-radius: 100px;
+    }
+
+    .divInformacoes1 {
+        margin-top: auto;
+    }
+
+    .tabelaContainer {
+        height: auto;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    .divTabelaImagem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloModulos {
+        font-size: 3.5rem;
+    }
+
+    .redesSociais {
+        font-size: 1rem;
+    }
+
+    .logoUnintese {
+        width: 100%;
+        height: auto;
+    }
+
+    .divInformacoes2 {
+        padding-top: 1rem;
+    }
+
+    .th {
+        font-size: 0.7rem;
+    }
+
+    .tableDiv2::before {
+        height: 10%;
+    }
+
+    .tableDiv3::before {
+        height: 10%;
+    }
+
+    .tableDiv4::before {
+        height: 10%;
+    }
+
+    .thDisciplina {
+        font-size: 1rem;
+    }
+
+    .tableDiv5::before {
+        height: 10%;
+    }
+
+    .divTituloInformacoes {
+        margin-right: 0;
+        justify-content: center;
+        top: 3%;
+    }
+
+    .thDisciplina {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .reticencias {
+        display: none;
+    }
+
+    .textoAviso {
+        font-size: 1.1rem;
+    }
+
+    .imagemCurso {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .divExpert {
+        margin-top: auto;
+    }
+
+    .listaContatos {
+        width: auto;
+        gap: 5rem;
+    }
+}
