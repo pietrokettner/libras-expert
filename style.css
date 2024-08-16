@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .imagem1 {
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .logo {
@@ -40,17 +40,11 @@ body {
     align-items: flex-start;
 }
 
-.titulo {
-    font-size: 11rem;
-    line-height: 0.4;
-    text-align: left;
-    margin-top: 2rem;
-}
-
 .tituloLibras {
     font-size: 11rem;
     display: inline-block;
     position: relative;
+    font-family: "Open Sans", sans-serif;
 }
 
 .tituloLibras::before {
@@ -103,7 +97,6 @@ body {
     cursor: default;
     margin-left: 5rem;
     margin-top: -0.3rem;
-    font-family: "Montserrat", sans-serif;
 }
 
 .subTitulo {
@@ -112,7 +105,6 @@ body {
     margin-bottom: 1rem;
     margin-top: -0.6rem;
     white-space: nowrap;
-    font-family: "Montserrat", sans-serif;
     margin-left: 1.1rem;
     letter-spacing: 0.6rem;
 }
@@ -127,12 +119,12 @@ body {
 
 .introducao {
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
 .introducao span {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .divButton {
