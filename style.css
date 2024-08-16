@@ -119,12 +119,12 @@ body {
 
 .introducao {
     text-align: left;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
-.introducao span {
-    font-weight: 600;
+.textoIntro span {
+    font-weight: 800;
 }
 
 .divButton {
