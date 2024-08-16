@@ -17,7 +17,16 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    background: linear-gradient(15deg, #5AC6EA, #32B1E5, #179ED8, #D7F0F4, #77CBEF);
+}
+
+.containerGeral {
+    background: url("/image/BKG-cabecalho.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagem1 {
+    margin-top: 3rem;
 }
 
 .logo {
@@ -32,7 +41,7 @@ body {
 }
 
 .titulo {
-    font-size: 8rem;
+    font-size: 11rem;
     line-height: 0.4;
     text-align: left;
     margin-top: 2rem;
@@ -51,41 +60,49 @@ body {
     top: 18%;
     width: 17%;
     height: 0.15em;
-    background: linear-gradient(45deg, #FFD854, #FFC257);
+    background: #00C5F2;
     z-index: 0;
     border-radius: 20px;
 }
 
+.tituloLibras::after {
+    content: '';
+    position: absolute;
+    left: 61%;
+    top: 11%;
+    width: 12.5rem;
+    height: 10rem;
+    background: url(/image/logo-faculdade-unintese-branco.png);
+    z-index: 4;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .titulo, .tituloLibras {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .divExpert {
-    background: whitesmoke;
     position: relative;
     border-radius: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.3rem;
-    margin-bottom: 1rem;
+    padding-top: 0;
+    margin-bottom: 0rem;
     margin-top: -2rem;
-    cursor: default;
-    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.divExpert:hover {
-    background: #733EFE;
 }
 
 .expert {
-    color: #32B1E5;
-    letter-spacing: 25px;
-    font-size: 1.8rem;
+    color: whitesmoke;
+    letter-spacing: 4.4rem;
+    font-size: 3rem;
     font-weight: 800;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     cursor: default;
+    margin-left: 5rem;
+    margin-top: -0.3rem;
 }
 
 .expert:hover {
@@ -95,18 +112,37 @@ body {
 
 .subTitulo {
     font-weight: 300;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     text-align: left;
+    margin-bottom: 1rem;
+    margin-top: -0.6rem;
+    white-space: nowrap;
+}
+
+.textoIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
+.introducao {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.introducao span {
+    font-weight: 700;
+}
+
 .divButton {
-    width: 55%;
-    background: #733EFE;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    margin-bottom: 5rem;
-    padding: 0.5rem;
+    width: auto;
+    background: linear-gradient(to right, #00D1EA, #00C3F1, #01B9F5, #00B2F8);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    padding: 1rem;
     transition: 0.5s ease-in-out, color 0.6s ease-in-out, transform 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -114,20 +150,20 @@ body {
 .buttonComecar {
     text-decoration: none;
     color: whitesmoke;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.9rem;
     transition: 0.5s ease-in-out, color 0.6s ease-in-out;
 }
 
 .divButton:hover {
-    background: linear-gradient(45deg, #733EFE, #32B1E5, whitesmoke);
+    background: linear-gradient(45deg, #733EFE, #00B2F8, whitesmoke);
     transform: translateY(-5px) perspective(10px) matrix(1, 0, 0, 1, 0, 0); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .buttonComecar:hover {
     text-decoration: none;
-    color: linear-gradient(45deg, #733EFE, #32B1E5, whitesmoke);
+    color: linear-gradient(45deg, #733EFE, #00D1EA, whitesmoke);
 }
 
 .containerGeral2 {
