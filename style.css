@@ -26,7 +26,7 @@ body {
 }
 
 .imagem1 {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .logo {
@@ -96,27 +96,25 @@ body {
 
 .expert {
     color: whitesmoke;
-    letter-spacing: 4.4rem;
-    font-size: 3rem;
-    font-weight: 800;
+    letter-spacing: 4.2rem;
+    font-size: 2.7rem;
+    font-weight: 700;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     cursor: default;
     margin-left: 5rem;
     margin-top: -0.3rem;
+    font-family: "Montserrat", sans-serif;
 }
-
-.expert:hover {
-    color: whitesmoke;
-}
-
 
 .subTitulo {
-    font-weight: 300;
-    font-size: 2.3rem;
-    text-align: left;
+    font-weight: 500;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     margin-top: -0.6rem;
     white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 1.1rem;
+    letter-spacing: 0.6rem;
 }
 
 .textoIntro {
@@ -142,7 +140,7 @@ body {
     background: linear-gradient(to right, #00D1EA, #00C3F1, #01B9F5, #00B2F8);
     margin-bottom: 3rem;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.8rem;
     transition: 0.5s ease-in-out, color 0.6s ease-in-out, transform 0.5s ease-in-out;
     cursor: pointer;
 }
