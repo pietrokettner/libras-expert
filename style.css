@@ -90,8 +90,8 @@ body {
 
 .expert {
     color: whitesmoke;
-    letter-spacing: 4.2rem;
-    font-size: 2.7rem;
+    letter-spacing: 4.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     cursor: default;
@@ -101,12 +101,12 @@ body {
 
 .subTitulo {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     margin-top: -0.6rem;
     white-space: nowrap;
-    margin-left: 1.1rem;
-    letter-spacing: 0.6rem;
+    margin-left: 1rem;
+    letter-spacing: 10.4px;
 }
 
 .textoIntro {
@@ -119,12 +119,12 @@ body {
 
 .introducao {
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
 .textoIntro span {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .divButton {
@@ -155,6 +155,57 @@ body {
     text-decoration: none;
     color: linear-gradient(45deg, #733EFE, #00D1EA, whitesmoke);
 }
+
+
+/* fim section 1 */
+
+
+
+
+
+/* section 2 */
+.backgroundAzul {
+    background: linear-gradient(to right, #00D1EA, #00C3F1, #01B9F5, #00B2F8);
+    height: auto;
+}
+
+.rowVideoCurso {
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: nowrap;
+}
+
+.divVideo, .divCurso {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.divCurso p {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+
+/* fim section 2 */
+
+
+
+
+/* section 3 */
+.divVideo h2, .divVideo p {
+    color: #0053A1;
+    font-weight: 600;
+}
+
+.divVideo h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+
+
+
 
 .containerGeral2 {
     background: #202020;
@@ -187,7 +238,7 @@ body {
     text-align: left;
     font-size: 5rem;
     color: #EF9301;
-    transition: 0.2s ease-in-out; /* Adicionado para animação suave */
+    transition: 0.2s ease-in-out; 
 }
 
 .bordaCurso {
