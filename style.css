@@ -387,7 +387,7 @@ body {
     border-radius: 20px;
 }
 
-#yellow:hover {
+/*#yellow:hover {
     box-shadow: 
         0 0 10px #FFCF00, 
         0 0 20px #FFE61B, 
@@ -417,7 +417,7 @@ body {
     0 0 20px #7A16E7, 
     0 0 30px #9836B2, 
     0 0 40px #7817E7;
-}
+}*/
 
 .toggleButton:focus {
     outline: none;
@@ -438,11 +438,6 @@ body {
 
 
 /* fim section 5 */
-
-
-
-
-
 
 
 
@@ -614,18 +609,20 @@ td:not([colspan="2"]) + td {
 }
 
 .subDivBox2 h2 {
-    font-size: 2.7rem;
+    font-size: 2.313rem;
     font-weight: 800;
     color: #FFFFFD;
     align-self: flex-start;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .mensalidade2 {
     font-size: 1rem;
-    color: #CBD694;
+    color: #ffda7b;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     align-self: flex-start;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .divValor {
@@ -633,24 +630,34 @@ td:not([colspan="2"]) + td {
     flex-direction: column;
 }
 
+.divValor p {
+    font-size: 1.313rem;
+    margin-left: -1rem;
+}
+
 .divValor h3 {
     margin-left: 2rem;
     margin-top: -5rem;
     text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.125rem;
 }
 
 .divValor span {
-    font-size: 5.4rem;
+    font-size: 5.813rem;
     font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .divValor strong {
-    font-size: 3rem;
+    font-size: 2.125rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .pagamento {
     font-style: italic;
     opacity: 0.9;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .divButton2 {
@@ -690,436 +697,14 @@ td:not([colspan="2"]) + td {
     text-decoration: none;
 }
 
+/* fim section 6 */
 
 
 
-/* section modulos */
-.divTabelaImagem {
-    display: flex;
-    margin-top: 3rem;
-    border-radius: 100px;
-}
 
 
 
-
-.tituloModulos {
-    font-size: 7rem;
-    line-height: 0.9;
-    font-weight: 800;
-    color: #0053A1;
-    text-align: left;
-}
-
-
-
-
-/* tabela 2 */
-
-
-.tableDiv2 {
-    background: whitesmoke;
-    padding-top: 2rem;
-    border-radius: 20px;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: relative;
-}
-
-.tableDiv2::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    height: 10%;
-    background: #FFD000;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    z-index: 0;
-}
-
-.tableDiv2.custom-borders .table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.tableDiv2.custom-borders .table th, 
-.tableDiv2.custom-borders .table td {
-    border: 4px solid #FFD000; /* Borda vertical interna */
-    border-left: none; /* Remove borda esquerda */
-    border-top: transparent;
-}
-
-.tableDiv2.custom-borders .table th:last-child, 
-.tableDiv2.custom-borders .table td:last-child {
-    border-right: transparent;
-}
-
-.tableDiv2.custom-borders .table thead {
-    background-color: #FFD000; 
-}
-
-.tableDiv2.custom-borders .table th {
-    border-bottom: 4px solid #FFD000; /* Mantém a borda inferior */
-}
-
-
-
-
-
-
-/* tabela 3 */
-.tableDiv3 {
-    background: whitesmoke;
-    padding-top: 2rem;
-    border-radius: 20px;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: relative;
-}
-
-.tableDiv3::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    height: 10%;
-    background: #0067B5;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    z-index: 0;
-}
-
-.tableDiv3.blue-borders .table th, 
-.tableDiv3.blue-borders .table td {
-    border: 4px solid #0067B5; /* Borda vertical interna */
-    border-left: none; /* Remove borda esquerda */
-    border-top: transparent;
-}
-
-.tableDiv3.blue-borders .table th:last-child, 
-.tableDiv3.blue-borders .table td:last-child {
-    border-right: transparent;
-}
-
-.tableDiv3.blue-borders .table th {
-    border-bottom: 4px solid #0067B5; /* Mantém a borda inferior */
-}
-
-
-
-/* tabela 4 */
-.tableDiv4 {
-    background: whitesmoke;
-    padding-top: 2rem;
-    border-radius: 20px;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: relative;
-}
-
-.tableDiv4::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    height: 10%;
-    background: #E34B4B;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    z-index: 0;
-}
-
-.tableDiv4.red-borders .table th, 
-.tableDiv4.red-borders .table td {
-    border: 4px solid #E34B4B; 
-    border-left: none;
-    border-top: transparent;
-}
-
-.tableDiv4.red-borders .table th:last-child, 
-.tableDiv4.red-borders .table td:last-child {
-    border-right: transparent;
-}
-
-.tableDiv4.red-borders .table th {
-    border-bottom: 4px solid #E34B4B; 
-}
-
-
-
-
-
-/* tabela 5 */
-.tableDiv5 {
-    background: whitesmoke;
-    padding-top: 2rem;
-    border-radius: 20px;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: relative;
-}
-
-.tableDiv5::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    height: 10%;
-    background: #7917E8;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    z-index: 0;
-}
-
-.tableDiv5.purple-borders .table th, 
-.tableDiv5.purple-borders .table td {
-    border: 4px solid #7917E8; 
-    border-left: none;
-    border-top: transparent;
-}
-
-.tableDiv5.purple-borders .table th:last-child, 
-.tableDiv5.purple-borders .table td:last-child {
-    border-right: transparent;
-}
-
-.tableDiv5.purple-borders .table th {
-    border-bottom: 4px solid #7917E8; 
-}
-
-/* fim tabelas */
-
-
-.divAviso {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.imgDanger {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 1%;
-    left: 65%;
-}
-
-.textoAviso {
-    color: #202020;
-    border: 2px solid #ED8A01;
-    padding: 1.5rem;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    font-weight: 600;
-    font-size: 1.3rem;
-    background: whitesmoke;
-    margin-top: 3rem;
-}
-
-.reticencias {
-    background: #ED8A01;
-    font-weight: 900;
-    letter-spacing: 10px;
-    padding-left: 0.5rem;
-    border-radius: 7px;
-    position: absolute;
-    font-size: 1rem;
-    padding-bottom: 0rem;
-    top: 83%;
-    left: 27%;
-}
-
-.divInformacoes1 {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 20px;
-    opacity: 0.6;
-    margin-top: 10rem;
-}
-
-.divTituloInformacoes {
-    display: flex;
-    justify-content: end;
-    margin-right: 5rem;
-    position: relative;
-    top: 5%;
-}
-
-.tituloInformacoes1 {
-    font-size: 6rem;
-    color: #0067B5;
-    font-weight: 800;
-}
-
-.divInformacoes2 {
-    display: flex;
-    flex-direction: column;
-    background: whitesmoke;
-    padding: 1rem;
-    border-radius: 20px;
-    padding-top: 3rem;
-}
-
-.ulInformacoes {
-    display: flex;
-    flex-direction: column;
-    margin-top: -1.5rem; 
-}
-
-.paragrafoInformacoesLi {
-    color: #202020;
-    font-weight: 700;
-    font-size: 0.9rem;
-    margin-left: 2rem;
-}
-
-.tituloInformacoes, .tituloInformacoes2 {
-    color: #0067B5;
-    font-weight: 800;
-    font-size: 2.2rem;
-}
-
-.tituloInformacoes2 {
-    font-size: 2rem;
-}
-
-.paragrafoInformacoes, .obs, .obs span {
-    color: #202020;
-    font-weight: 700;
-}
-
-.obs span {
-    text-decoration: underline;
-}
-
-.divInvestimentoGeral {
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    gap: 1rem;
-}
-
-.divInvestimento {
-    background: #0067B5;
-    padding: 2rem;
-    border-radius: 30px;
-    border: 2px solid whitesmoke;
-}
-
-.tituloInvestimento {
-    font-weight: 700;
-    text-align: center;
-}
-
-.italico {
-    font-style: italic;
-    font-size: 0.9rem;
-}
-
-.dorado {
-    color: goldenrod;
-    font-weight: 700;
-}
-
-.divFinal {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.logoUnintese {
-    width: 25%;
-    height: auto;
-    margin-top: 3rem;
-}
-
-.unintese {
-    font-size: 2.2rem;
-    font-weight: 300;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	margin-top: 2rem;
-}
-
-.divContatos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.listaContatos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    background: blueviolet;
-    padding: 1rem;
-    border-radius: 100px;
-    width: 50%;
-    gap: 1rem;
-    flex-direction: column;
-}
-
-.divSocial {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-
-.divFone {
-    margin-top: 1rem;
-}
-
-.foneParagrafo {
-    font-weight: 700;
-}
-
-.iconesContato {
-	width: 40px;
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.texto-contato:hover .iconesContato {
-    transform: scale(1.2);
-	filter: invert(60%) sepia(20%) saturate(4448%) hue-rotate(226deg) brightness(90%) contrast(101%);
-}
-
-.textoContato {
-	color: whitesmoke;
-}
-
-.duvida, .contato {
-	color: whitesmoke;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-
-
-
-
+/* mobile */
 
 @media (max-width: 1366px) {
     .tabelaContainer {
