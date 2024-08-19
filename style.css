@@ -356,14 +356,14 @@ body {
 
 .divImgs {
     display: flex;
-    justify-content: space-evenly;
+    gap: 5rem;
 }
 
 .dinamicBox {
     padding: 0 1.5rem;
     background: #EDEDED;
     border-top: 2px solid #0053A1;
-    width: 75%;
+    width: 95%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -383,7 +383,7 @@ body {
 
 .toggleButton:hover {
     filter: grayscale(0);
-    border-radius: 100px;
+    border-radius: 20px;
 }
 
 #yellow:hover {
@@ -427,6 +427,8 @@ body {
     color: #202020;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7;
 }
 
 .imgColored {
