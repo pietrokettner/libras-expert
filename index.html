@@ -186,16 +186,13 @@
                 var targetId = this.getAttribute('data-target');
                 var targetBox = document.getElementById(targetId);
                 
-                // Verifica se o box alvo está atualmente expandido
                 var isExpanded = targetBox.classList.contains('expanded');
 
-                // Fecha todos os dinamicBoxes
                 document.querySelectorAll('.dinamicBox').forEach(box => {
                     box.classList.remove('expanded');
                     box.style.maxHeight = null;
                 });
 
-                // Se o box alvo não estava expandido, expande-o; se já estava, deixa fechado
                 if (!isExpanded) {
                     targetBox.classList.add('expanded');
                     targetBox.style.maxHeight = targetBox.scrollHeight + "px"; 
@@ -214,7 +211,6 @@
                             <thead>
                                 <tr>
                                     <th class="thDisciplina">
-                                        <img class="imgCoracao" src="/image/coracao.png" alt="coracao unintese">
                                         DISCIPLINA
                                     </th>
                                     <th>Carga horária</th>
@@ -256,8 +252,20 @@
                                     <td colspan="2">MODULO ESPECÍFICO - ÊNFASES</td>
                                 </tr>
                                 <tr>
-                                    <td id="noBotBorder">Núcleo Específico Optativo (ênfase)</td>
-                                    <td id="noBotBorder" class="tdHorario">-</td>
+                                    <td>Tradução e interpretação no contexto escolhido</td>
+                                    <td class="tdHorario">30h</td>
+                                </tr>
+                                <tr>
+                                    <td>Estratégias e práticas de tradução e interpretação no contexto escolhido</td>
+                                    <td class="tdHorario">45h</td>
+                                </tr>
+                                <tr>
+                                    <td>Laboratório de práticas (orientadas)</td>
+                                    <td class="tdHorario">45h</td>
+                                </tr>
+                                <tr>
+                                    <td id="noBotBorder">Sistematização das atividades práticas</td>
+                                    <td id="noBotBorder" class="tdHorario">15h</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">MODULO DE FINALIZAÇÃO</td>
