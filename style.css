@@ -341,6 +341,13 @@ body {
 
 
 /* section 5 */
+.geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .geral h2 {
     color: #0053A1;
     font-size: 4.6rem;
@@ -351,6 +358,82 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.dinamicBox {
+    padding: 0 1.5rem;
+    background: #EDEDED;
+    border-top: 2px solid #0053A1;
+    width: 75%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dinamicBox.expanded {
+    max-height: 200px; 
+}
+
+.toggleButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.2s ease-in-out;
+}
+
+.toggleButton:hover {
+    filter: grayscale(0);
+    border-radius: 100px;
+}
+
+#yellow:hover {
+    box-shadow: 
+        0 0 10px #FFCF00, 
+        0 0 20px #FFE61B, 
+        0 0 30px #FFCF00, 
+        0 0 40px #FE7D07;
+}
+
+#blue:hover {
+    box-shadow: 
+    0 0 10px #0068B6, 
+    0 0 20px #098EC3, 
+    0 0 30px #34BFDB, 
+    0 0 40px #0068B4; 
+}
+
+#red:hover {
+    box-shadow: 
+    0 0 10px #E74C4C, 
+    0 0 20px #F53337, 
+    0 0 30px #A60D13, 
+    0 0 40px #C21C29;
+}
+
+#purple:hover {
+    box-shadow: 
+    0 0 10px #7B17EA, 
+    0 0 20px #7A16E7, 
+    0 0 30px #9836B2, 
+    0 0 40px #7817E7;
+}
+
+.toggleButton:focus {
+    outline: none;
+    filter: grayscale(0);
+}
+
+.dinamicBox p {
+    color: #202020;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgColored {
+    filter: grayscale(0);
+}
+
+
 
 
 
@@ -475,7 +558,7 @@ body {
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 59rem;
+    margin-top: 1rem;
 }
 
 table {

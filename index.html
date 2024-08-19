@@ -139,24 +139,42 @@
                         <h2>Conheça as ênfases disponíveis</h2>
                         <div class="divImgs">
                             <div class="imageEnfaseDiv">
-                                <img src="/image/enfases-cinza-REL.webp" alt="">
+                                <button class="toggleButton" id="yellow">
+                                    <img class="imgContexto" src="/image/contexto-religioso.webp" alt="imagem representativa do contexto religioso">
+                                </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <img src="/image/enfases-cinza-MID.webp" alt="">
+                                <button class="toggleButton" id="blue">
+                                    <img class="imgContexto" src="/image/contexto-midiatico-audiovisual.webp" alt="imagem representativa do contexto midiatico audiovisual">
+                                </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <img src="/image/enfases-cinza-JUR.webp" alt="">
+                                <button class="toggleButton" id="red">
+                                    <img class="imgContexto" src="/image/contexto-juridico.webp" alt="imagem representativa do contexto juridico">
+                                </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <img src="/image/enfases-cinza-EDU.webp" alt="">
+                                <button class="toggleButton" id="purple">
+                                    <img class="imgContexto" src="/image/contexto-educacional.webp" alt="imagem representativa do contexto educacional">
+                                </button>
                             </div>
+                        </div>
+                        <div class="dinamicBox">
+                            <p>Aprofunde sua vocação ao tornar os pespaços religiosos acesíveis a todos. Com a ênfase religiosa do curso de pós-graduação em Libras, você aprenderá a integrar a comunicação em Libras nas celebrasões, sermões e atividades religiosas, garantindo que a mensagem de fé alcance todos os corações. Este curso é ideal para líderes religiosos, educadores em comunidades de fé e qualquer pessoa comprometida com a inclusão na prática espiritual. Prepare-se para abrir portas para a acessibilidade e ser um agente de transformação na sua comunidade, criando oportunidades para que todos vivenciem a espiritualidade em sua plenitude.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <script>
+            document.querySelectorAll('.toggleButton').forEach(button => {
+            button.addEventListener('click', function() {
+                var box = document.querySelector('.dinamicBox');
+                box.classList.toggle('expanded');
+            });
+        });
+        </script>
 
 
 
