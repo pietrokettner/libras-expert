@@ -286,12 +286,12 @@ body {
     overflow: hidden;
 }
 
-.divEnfase h3 {
+.divEnfase1 h3 {
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-.divEnfase p {
+.divEnfase1 p {
     color: #DD914F;
     font-size: 0.9rem;
 }
