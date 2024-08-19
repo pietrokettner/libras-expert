@@ -139,28 +139,37 @@
                         <h2>Conheça as ênfases disponíveis</h2>
                         <div class="divImgs">
                             <div class="imageEnfaseDiv">
-                                <button class="toggleButton" id="yellow">
+                                <button class="toggleButton" data-target="um" id="yellow">
                                     <img class="imgContexto" src="/image/contexto-religioso.webp" alt="imagem representativa do contexto religioso">
                                 </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <button class="toggleButton" id="blue">
+                                <button class="toggleButton" data-target="dois" id="blue">
                                     <img class="imgContexto" src="/image/contexto-midiatico-audiovisual.webp" alt="imagem representativa do contexto midiatico audiovisual">
                                 </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <button class="toggleButton" id="red">
+                                <button class="toggleButton" data-target="tres" id="red">
                                     <img class="imgContexto" src="/image/contexto-juridico.webp" alt="imagem representativa do contexto juridico">
                                 </button>
                             </div>
                             <div class="imageEnfaseDiv">
-                                <button class="toggleButton" id="purple">
+                                <button class="toggleButton" data-target="quatro" id="purple">
                                     <img class="imgContexto" src="/image/contexto-educacional.webp" alt="imagem representativa do contexto educacional">
                                 </button>
                             </div>
                         </div>
-                        <div class="dinamicBox">
+                        <div class="dinamicBox" id="um">
                             <p>Aprofunde sua vocação ao tornar os pespaços religiosos acesíveis a todos. Com a ênfase religiosa do curso de pós-graduação em Libras, você aprenderá a integrar a comunicação em Libras nas celebrasões, sermões e atividades religiosas, garantindo que a mensagem de fé alcance todos os corações. Este curso é ideal para líderes religiosos, educadores em comunidades de fé e qualquer pessoa comprometida com a inclusão na prática espiritual. Prepare-se para abrir portas para a acessibilidade e ser um agente de transformação na sua comunidade, criando oportunidades para que todos vivenciem a espiritualidade em sua plenitude.</p>
+                        </div>
+                        <div class="dinamicBox" id="dois">
+                            <p>O futuro da comunicação passa pela inclusão. com a ênfase em contextos midiáticos e audiovisuais, você vai dominar a arte de integrar Libras nas diversas plataformas de mídia, desde produções audiovisuais até campanhas publicitárias. Este curso é perfeito para profissionais de comunicação, cineastas, designers e todos que desejam levar a acessibilidade para o próximo nível. Descubra como a Libras pode transformar a maneira como o conteúdo é criado e consumido, dando voz e visibilidade a uma parcela significativa da população. Seja um pioneiro na construção de uma comunicação verdadeiramente inclusiva e inovadora!</p>
+                        </div>
+                        <div class="dinamicBox" id="tres">
+                            <p>Em um mundo onde a acessibilidade é um direito fundamental, o conhecimento em Libras é uma ferramenta poderosa no campo jurídico. A ênfase juridica do curso de pós-graduação em Libras capacita advogados, profissionais de direito e servidores públicos a garantir que a justiça seja plenamente acessível para todos, especialmente para a comunidade surda. Aprofunde-se em legislações, práticas inclusivas e interprete o direito de maneira mais abrangente. Prepare-se para ser um defensor dos direitos humanos, promovendo a igualdade e a inclusão no cenário jurídico e assegurando que a voz de todos seja ouvida e respeitada.</p>
+                        </div>
+                        <div class="dinamicBox" id="quatro">
+                            <p>A educação é a base para uma sociedade inclusiva, e com a ênfase educacional no curso de pós-graduação em Libras, você estará na vanguarda dessa transformação. Ideal para educadores, pedagogos e gestores escolares, este curso oferece as ferramentas necessárias para integrar a Libras de maneira eficaz e inovadora no ambiente educacional. Aprenda a construir pontes entre os mundos, garantindo que todos os alunos, independentemente de sua capacidade auditiva, tenham acesso ao conhecimento de forma equitativa. Inspire, transforme e seja um líder na construção de um futuro onde a educação é inclusiva, diversa e acessível para todos.</p>
                         </div>
                     </div>
                 </div>
@@ -169,11 +178,21 @@
 
         <script>
             document.querySelectorAll('.toggleButton').forEach(button => {
-            button.addEventListener('click', function() {
-                var box = document.querySelector('.dinamicBox');
-                box.classList.toggle('expanded');
+                button.addEventListener('click', function() {
+                    var targetId = this.getAttribute('data-target');
+                    var targetBox = document.getElementById(targetId);
+                    
+                    document.querySelectorAll('.dinamicBox').forEach(box => {
+                        box.classList.remove('expanded');
+                        box.style.maxHeight = null;
+                    });
+
+                    if (targetBox) {
+                        targetBox.classList.add('expanded');
+                        targetBox.style.maxHeight = targetBox.scrollHeight + "px"; 
+                    }
+                });
             });
-        });
         </script>
 
 
