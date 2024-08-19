@@ -545,6 +545,150 @@ td:not([colspan="2"]) + td {
     border-bottom: transparent;
 }
 
+/* fim tabela */
+
+
+
+
+
+/* section 6 */
+.containerGeral2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.backgroundAzulEscuro2 {
+    background: #0053A1;
+    height: 18rem;
+    position: relative;
+}
+
+.backgroundAzulEscuro2::before {
+    content: '';
+    position: absolute;
+    left: -34%;
+    top: 0%;
+    width: 34%;
+    height: 30.3vh;
+    background: inherit;
+    z-index: 0;
+}
+
+.backgroundAzulEscuro2::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    width: 33.5%;
+    height: 30.3vh;
+    background: inherit;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.divEnfase {
+    display: flex;
+    justify-content: center;
+}
+
+.divEnfase img {
+    margin-top: 1rem;
+}
+
+.divbox2 {
+    background: linear-gradient(to bottom left, #00B5F7, #00C2F0, #00D0EC);
+    padding: 1.8rem;
+    border-radius: 20px;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.7);
+    width: 70%;
+}
+
+.subDivBox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subDivBox2 h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #FFFFFD;
+    align-self: flex-start;
+}
+
+.mensalidade2 {
+    font-size: 1rem;
+    color: #CBD694;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.divValor {
+    display: flex;
+    flex-direction: column;
+}
+
+.divValor h3 {
+    margin-left: 2rem;
+    margin-top: -5rem;
+    text-align: left;
+}
+
+.divValor span {
+    font-size: 5.4rem;
+    font-weight: 800;
+}
+
+.divValor strong {
+    font-size: 3rem;
+}
+
+.pagamento {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.divButton2 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(#F07200, #F28D00, #F4AB00);
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    transition: 0.5s ease-in-out, color 0.6s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.buttonAncora {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out, color 0.6s ease-in-out;
+}
+
+.divButton2:hover {
+    background: linear-gradient(45deg, #E64B4B, #FB7100, #E44C4B, #EB6707, whitesmoke);
+    transform: translateY(-5px) perspective(10px) matrix(1, 0, 0, 1, 0, 0); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.buttonAncora:hover {
+    background: linear-gradient(45deg, #E44C4B, #C41C27, #F33A3E, whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+
 
 
 /* section modulos */
