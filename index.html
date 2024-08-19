@@ -197,7 +197,22 @@
                     targetBox.classList.add('expanded');
                     targetBox.style.maxHeight = targetBox.scrollHeight + "px"; 
                 }
+
+                // Remove foco dos outros botões
+                document.querySelectorAll('.toggleButton').forEach(btn => {
+                    btn.blur(); // Remove o foco
+                });
+
+                // Foca o botão clicado
+                this.focus();
             });
+        });
+
+        // Simula o clique no botão com ID "yellow" e foca nele ao carregar a página
+        window.addEventListener('DOMContentLoaded', function() {
+            var yellowButton = document.getElementById('yellow');
+            yellowButton.click();
+            yellowButton.focus(); // Adiciona o foco ao botão
         });
         </script>
 
