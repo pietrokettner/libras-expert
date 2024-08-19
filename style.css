@@ -357,6 +357,7 @@ body {
 .divImgs {
     display: flex;
     gap: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 .dinamicBox {
@@ -436,131 +437,39 @@ body {
 }
 
 
+/* fim section 5 */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-.containerGeral2 {
-    background: #202020;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.divEnfasesGeral {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
-}
-
-.enfaseParagrafo {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-.enfaseTitulo {
-    margin-top: -1rem;
-}
-
-.divImagem {
-    margin-top: 4.5rem;
-}
-
-.tituloCurso {
-    text-align: left;
-    font-size: 5rem;
-    color: #EF9301;
-    transition: 0.2s ease-in-out; 
-}
-
-.bordaCurso {
-    border: 2px solid #EE9701;
-    padding: 1rem;
-    border-radius: 12px;
-    background: #11D3F6;
-    transition: 0.2s ease-in-out;
-}
-
-.textoCurso {
-    text-align: left;
-    transition: 0.2s ease-in-out; 
-}
-
-.textoCurso span {
-    font-weight: 800;
-    transition: 0.2s ease-in-out;
-}
-
-.bordaCurso:hover {
-    border: 4px solid #11D3F6;
-}
-
-.bordaCurso:hover,
-.bordaCurso:hover .textoCurso,
-.bordaCurso:hover  {
-    background: #EE9701;
-    color: whitesmoke;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.bordaCurso:hover .textoCurso span {
-    color: whitesmoke;
-    background: #EE9701;
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-.tituloCurso.hover {
-    color: #11D3F6;
-    font-size: 3rem;
-    font-weight: 700;
-    text-decoration: underline;
-    text-transform: capitalize;
-}
 
 
 
 
 /* Tabela */
-
-.imgCoracao {
-    position: absolute;
-    width: 3%;
-    height: auto;
-    transform: rotate(35deg);
-    top: 160%;
-    left: 23%;
-}
-
 .tabelaContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .tableDiv {
+    width: 90%;
     background: whitesmoke;
     padding-top: 2rem;
     border-radius: 20px;
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5), 
+    0 6px 20px rgba(0, 0, 0, 0.4)
 }
 
 table {
@@ -615,7 +524,7 @@ td[colspan="2"] {
 td {
     text-align: left;
     color: #202020;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .tdHorario {
