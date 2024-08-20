@@ -938,4 +938,67 @@ footer {
     .imgContexto {
         width: 22rem;
     }
+
+    .containerGeral2 {
+        margin-top: 2rem;
+        margin-bottom: auto;
+    }
+
+    .backgroundAzulEscuro2 {
+        height: auto;
+    }
+
+    .backgroundAzulEscuro2::before {
+        left: auto;
+    }
+
+    .backgroundAzulEscuro2::after {
+        left: auto;
+    }
+
+    .divEnfase img {
+        display: none;
+    }
+
+    .divbox2 {
+        margin-top: auto;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .divValor span {
+        font-size: 4.113rem;
+        font-weight: 800;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .divValor h3 {
+        margin-top: -3rem;
+    }
+
+    .buttonAncora {
+        font-size: 1.5rem;
+    }
+
+    .divFormulario {
+        margin-top: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .backgroundBranco {
+        background: none;
+    }
+    
+    .divFormulario h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        margin-top: 9rem;
+    }
+
+    .containerGeralFormulario {
+        margin-top: 7rem;
+    }
 }
