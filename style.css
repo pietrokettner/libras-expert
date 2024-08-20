@@ -601,6 +601,8 @@ td:not([colspan="2"]) + td {
     box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.7);
     width: 70%;
     margin-left: -1.6rem;
+    position: relative;
+    z-index: 2;
 }
 
 .subDivBox2 {
@@ -723,20 +725,99 @@ td:not([colspan="2"]) + td {
 }
 
 .divFormulario {
-    padding: 1.5rem;
+    padding: 2rem;
     background: whitesmoke;
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5), 
-    0 6px 20px rgba(0, 0, 0, 0.4);
-    margin-top: -5rem;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 25rem;
     width: 75%;
     border-radius: 20px;
+    height: 60%;
 }
 
 .divFormulario h2 {
     color: #202020;
     font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 
+#mauticform_label_formulariolibrasexpert_nome1, #mauticform_label_formulariolibrasexpert_email, #mauticform_label_formulariolibrasexpert_whatsapp_com_ddd, #mauticform_label_formulariolibrasexpert_escolha_sua_enfase, #mauticform_label_formulariolibrasexpert_escolha_sua_enfase {
+    color: #202020;
+    font-size: 1rem;
+}
+
+.mauticform-selectbox, .mauticform-input, .mauticform-textarea, option, select {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    border: 1px solid #CCC;
+    background: whitesmoke;
+    box-shadow: 0px 0px 0px #fff inset;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    height: 3rem;
+}
+
+#mauticform_formulariolibrasexpert_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mauticform_input_formulariolibrasexpert_submit {
+    width: 65%;
+    margin-top: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-size: 1.5rem;
+    background: linear-gradient(#F07200, #F28D00, #F4AB00);
+    transition: 0.5s ease-in-out, color 0.6s ease-in-out, transform 0.5s ease-in-out;
+    border: none;
+    color: whitesmoke;
+}
+
+#mauticform_input_formulariolibrasexpert_submit:hover {
+    background: linear-gradient(45deg, #E64B4B, #FB7100, #E44C4B, #EB6707, whitesmoke);
+    transform: translateY(-5px) perspective(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+/* fim section 7 */
+
+
+
+
+/* footer */
+footer {
+    margin-top: 19rem;
+    margin-bottom: 2rem;
+}
+
+.divRedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.divRedes a {
+    display: inline-block;
+}
+
+.icon-social {
+    transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: visible;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.icon-social:hover {
+    filter: grayscale(7) brightness(1) invert(30);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 8px 20px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    overflow: visible;
+}
 
 
 /* mobile */
