@@ -916,7 +916,7 @@ footer {
     }
 
     .geral {
-        margin-top: 2rem;
+        margin-top: auto;
     }
 
     .divImgs {
@@ -933,5 +933,9 @@ footer {
     .tableDiv {
         width: auto;
         overflow: auto;
+    }
+
+    .imgContexto {
+        width: 22rem;
     }
 }
