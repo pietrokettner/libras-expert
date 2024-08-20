@@ -728,10 +728,10 @@ td:not([colspan="2"]) + td {
     padding: 2rem;
     background: whitesmoke;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.4);
-    margin-top: 25rem;
+    margin-top: 28rem;
     width: 75%;
     border-radius: 20px;
-    height: 60%;
+    height: 63%;
 }
 
 .divFormulario h2 {
@@ -790,7 +790,7 @@ td:not([colspan="2"]) + td {
 
 /* footer */
 footer {
-    margin-top: 19rem;
+    margin-top: 22rem;
     margin-bottom: 2rem;
 }
 
