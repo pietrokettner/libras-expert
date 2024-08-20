@@ -942,18 +942,12 @@ footer {
     .containerGeral2 {
         margin-top: 2rem;
         margin-bottom: auto;
+        background: #0053A1;
     }
 
     .backgroundAzulEscuro2 {
         height: auto;
-    }
-
-    .backgroundAzulEscuro2::before {
-        left: auto;
-    }
-
-    .backgroundAzulEscuro2::after {
-        left: auto;
+        background: none;
     }
 
     .divEnfase img {
@@ -964,6 +958,7 @@ footer {
         margin-top: auto;
         width: auto;
         margin-left: auto;
+        margin-bottom: -3rem;
     }
 
     .divValor span {
@@ -995,11 +990,11 @@ footer {
     }
 
     footer {
-        margin-top: 9rem;
+        margin-top: 8rem;
     }
 
     .containerGeralFormulario {
-        margin-top: 7rem;
+        margin-top: 12rem;
     }
     
     
