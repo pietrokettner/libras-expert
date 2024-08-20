@@ -59,7 +59,7 @@
                 <div class="row rowVideoCurso">
                     <div class="col-12 col-lg-6">
                         <div class="divVideo">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nBhhdVLeUY4?si=F2PxBuaL2vAK4TVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="border-radius: 20px;" width="560" height="315" src="https://www.youtube.com/embed/nBhhdVLeUY4?si=F2PxBuaL2vAK4TVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -198,21 +198,18 @@
                     targetBox.style.maxHeight = targetBox.scrollHeight + "px"; 
                 }
 
-                // Remove foco dos outros botões
                 document.querySelectorAll('.toggleButton').forEach(btn => {
-                    btn.blur(); // Remove o foco
+                    btn.blur(); 
                 });
 
-                // Foca o botão clicado
                 this.focus();
             });
         });
 
-        // Simula o clique no botão com ID "yellow" e foca nele ao carregar a página
         window.addEventListener('DOMContentLoaded', function() {
             var yellowButton = document.getElementById('yellow');
             yellowButton.click();
-            yellowButton.focus(); // Adiciona o foco ao botão
+            yellowButton.focus(); 
         });
         </script>
 
@@ -326,61 +323,18 @@
             </div>
         </section>
 
-        <!-- <section class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="divInformacoes1">
-                        <h2 class="tituloInformacoes">Documentos para matrícula | Pós-graduação</h2>
-                        <ul>
-                            <li class="paragrafoInformacoes">Certificado de Conclusão do Ens. Médio;</li>
-                            <li class="paragrafoInformacoes">Histórico de Conclusão do Ens. Médio;</li>
-                            <li class="paragrafoInformacoes">Cópia do RG e CPF;</li>
-                            <li class="paragrafoInformacoes">Cópia do Título de Eleito;</li>
-                            <li class="paragrafoInformacoes">Cópia de Certidão de Nascimento/Casamento;</li>
-                            <li class="paragrafoInformacoes">Cópia do Comprovante de Residência;</li>
-                            <li class="paragrafoInformacoes">Foto de Perfil;</li>
-                            <li class="paragrafoInformacoes">Dados complementares (Sistema Acadêmico/AVA);</li>
-                            <li class="paragrafoInformacoes">Assinatura do contrato de matrícula;</li>
-                        </ul>
-                        <p class="obs"><span>OBS:</span> caso o comprovante não esteja em nome do aluno, do cônjuge ou em nome dos pais, devará ser entregue uma declaração de residência. Caso esteja em nome do cônjuge, deverá apresentar certidão de casamento ou declaração de união estável.</p>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-lg-6">
-                    <div class="divTituloInformacoes">
-                        <h2 class="tituloInformacoes1">Informações</h2>
-                    </div>
-                    <div class="divInformacoes2">
-                        <p class="tituloInformacoes2">Modalidade EaD</p>
-                        <p class="tituloInformacoes2">Aulas ao vivo quinzenais</p>
-                        <p class="tituloInformacoes2">Carga horária: 400h</p>
-                        <p class="tituloInformacoes2">Duração:</p>
-                        <ul class="ulInformacoes">
-                            <li class="paragrafoInformacoesLi">Tempo mínimo para integralização 15 a 18 meses letivos (a depender da ênfase/férias e recesso)</li>
-                            <li class="paragrafoInformacoesLi">Tempo máximo para conclusão: 30 meses</li>
-                        </ul>
-                        <p class="tituloInformacoes2">Exigida fluência em Libras</p>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <div class="col-12">
-                <div class="divInvestimentoGeral">
-                    <div class="divInvestimento">
-                        <h2 class="tituloInvestimento">Investimento</h2>
-                        <ul>
-                            <li><strong>Taxa de inscrição:</strong> R$65,00</li>
-                            <li><strong>Parcelas:</strong> 1 + 16 de R$280,00 (valor integral)</li>
-                        </ul>
-                        <p class="italico">(Efetuando pagamento até dia 05 de cada mês, você ganha 15% de desconto, a parcela fica R$238,00).</p>
-                        <p class="dorado">Entre em contato para valores promocionais.</p>
-                    </div>
-                    <div class="divInvestimentoImg">
-                        <img class="img-fluid" src="/image/Pedagogia bilíngue @0.3x.png" alt="">
+        <section class="containerGeralFormulario backgroundBranco">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 divGeralFormulario">
+                        <div class="divFormulario">
+                            <h2>Cadastre-se para receber mais informações e conteúdos exclusivos</h2>
+                            <script type="text/javascript" src="//crm.unintese.com.br/form/generate.js?id=131"></script>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
 

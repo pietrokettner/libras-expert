@@ -600,6 +600,7 @@ td:not([colspan="2"]) + td {
     gap: 1.5rem;
     box-shadow: 13px 10px 10px rgba(0, 0, 0, 0.7);
     width: 70%;
+    margin-left: -1.6rem;
 }
 
 .subDivBox2 {
@@ -701,6 +702,40 @@ td:not([colspan="2"]) + td {
 
 
 
+/* section 7 */
+.containerGeralFormulario {
+    margin-top: -3rem;
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.backgroundBranco {
+    background: url(/image/banner-formulario.webp);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divGeralFormulario {
+    display: flex;
+    justify-content: center;
+}
+
+.divFormulario {
+    padding: 1.5rem;
+    background: whitesmoke;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5), 
+    0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-top: -5rem;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.divFormulario h2 {
+    color: #202020;
+    font-weight: 700;
+}
 
 
 
