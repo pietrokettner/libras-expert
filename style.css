@@ -837,6 +837,11 @@ footer {
 
 
 @media (max-width: 768px) {
+    .dinamicBox {
+        width: auto;
+        height: auto;
+    }
+
     .tituloLibras {
         font-size: 7rem;
         margin-left: 0rem;
@@ -998,4 +1003,101 @@ footer {
     }
     
     
+}
+
+
+
+@media (max-width: 375px) {
+    .dinamicBox {
+        width: auto;
+        height: auto;
+    }
+
+    .tituloLibras {
+        font-size: 5.5rem;
+    }
+
+    .tituloLibras::after {
+        width: 6rem;
+    }
+
+    .expert {
+        letter-spacing: 1.3rem;
+        margin-left: 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .subTitulo {
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 0rem;
+        letter-spacing: 0.2px;
+    }
+
+    .buttonComecar {
+        font-size: 1.3rem;
+    }
+
+    .rowVideoCurso {
+        justify-content: unset;
+    }
+
+    .divVideo {
+        margin-bottom: 0rem;
+        justify-content: center;
+        display: flex;
+    }
+
+    .divVideo2 h2 {
+        font-size: 4rem;
+    }
+
+    .imgContexto {
+        width: 19rem;
+    }
+
+    .subDivBox2 h2 {
+        font-size: 1.813rem;
+    }
+
+    .divValor span {
+        font-size: 3.513rem;
+    }
+
+    .buttonAncora {
+        font-size: 1.2rem;
+    }
+
+    .containerGeralFormulario {
+        margin-top: 16rem;
+    }
+
+    footer {
+        margin-top: 15rem;
+    }
+
+    #mauticform_input_formulariolibrasexpert_submit {
+        font-size: 1.3rem;
+    }
+}
+
+@media (width: 375px) {
+    .tituloLibras {
+        font-size: 7rem;
+    }
+
+    .subTitulo {
+        margin-left: 1rem;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media (width: 360px) {
+    .tituloLibras {
+        font-size: 6.5rem;
+    }
+
+    .subTitulo {
+        margin-left: 1.5rem;
+    }
 }
