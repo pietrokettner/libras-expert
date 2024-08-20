@@ -732,6 +732,7 @@ td:not([colspan="2"]) + td {
     width: 75%;
     border-radius: 20px;
     height: 63%;
+    width: 60%;
 }
 
 .divFormulario h2 {
