@@ -820,18 +820,17 @@ footer {
     overflow: visible;
 }
 
+/* fim footer */
+
+
+
+
+
 
 /* mobile */
 
 @media (max-width: 1366px) {
-    .tabelaContainer {
-        height: auto;
-        margin-top: 3rem;
-    }
     
-    .containerModulos {
-        margin-top: 3rem;
-    }
 }
 
 
@@ -840,149 +839,99 @@ footer {
 @media (max-width: 768px) {
     .tituloLibras {
         font-size: 7rem;
+        margin-left: 0rem;
+    }
+
+    .tituloLibras::after {
+        width: 8rem;
+    }
+
+    .expert {
+        letter-spacing: 2.2rem;
+        margin-left: 2.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .subTitulo {
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 1rem;
+        letter-spacing: 2.8px;
+    }
+
+    .textoIntro {
+        gap: 0rem;
     }
 
     .divButton {
         width: 100%;
-        margin-bottom: 0rem;
+        margin-bottom: -3rem;
     }
 
-    .divEnfasesGeral {
-        margin-bottom: auto;
+    .rowVideoCurso {
         flex-wrap: wrap;
-        gap: 3rem;
-    }
-
-    .divEnfases {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
-    .enfaseParagrafo {
-        margin-top: 0rem;
-        align-items: center;
-    }
-
-    .divTituloInformacoes {
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .containerModulos {
+    .divVideo {
+        margin-bottom: 0rem;
         display: flex;
-        padding: 1rem;
-        flex-direction: column;
     }
 
-    .tituloInformacoes1 {
-        font-size: 3rem;
+    .divCurso {
+        display: none;
     }
 
-    .divInvestimentoGeral {
-        flex-direction: column;
-    }
-
-    .unintese {
-        text-align: center;
-    }
-
-    .divTabelaImagem {
-        /* display: flex; */
-        margin-top: 3rem;
-        border-radius: 100px;
-    }
-
-    .divInformacoes1 {
+    .divVideo2, .divCurso2 {
         margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .backgroundMao {
+        display: none;
+    }
+
+    .divEnfase1 h3 {
+        margin-top: 1rem;
+    }
+
+    .divbox {
+        margin-top: 0rem;
+    }
+
+    .geral h2 {
+        margin-top: 1rem;
+    }
+
+    .backgroundAzulEscuro {
+        height: auto;
+    }
+
+    .backgroundAzulEscuro::after {
+        width: auto;
+    }
+
+    .geral h2 {
+        display: none;
+    }
+
+    .geral {
+        margin-top: 2rem;
+    }
+
+    .divImgs {
+        gap: 1rem;
+        flex-direction: column;
     }
 
     .tabelaContainer {
         height: auto;
-        justify-content: flex-start;
         margin-top: 3rem;
+        margin-bottom: auto;
     }
 
-    .divTabelaImagem {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tituloModulos {
-        font-size: 3.5rem;
-    }
-
-    .redesSociais {
-        font-size: 1rem;
-    }
-
-    .logoUnintese {
-        width: 100%;
-        height: auto;
-    }
-
-    .divInformacoes2 {
-        padding-top: 1rem;
-    }
-
-    .th {
-        font-size: 0.7rem;
-    }
-
-    .tableDiv2::before {
-        height: 10%;
-    }
-
-    .tableDiv3::before {
-        height: 10%;
-    }
-
-    .tableDiv4::before {
-        height: 10%;
-    }
-
-    .thDisciplina {
-        font-size: 1rem;
-    }
-
-    .tableDiv5::before {
-        height: 10%;
-    }
-
-    .divTituloInformacoes {
-        margin-right: 0;
-        justify-content: center;
-        top: 3%;
-    }
-
-    .thDisciplina {
-        font-size: 1.3rem;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .reticencias {
-        display: none;
-    }
-
-    .textoAviso {
-        font-size: 1.1rem;
-    }
-
-    .imagemCurso {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .divExpert {
-        margin-top: auto;
-    }
-
-    .listaContatos {
+    .tableDiv {
         width: auto;
-        gap: 5rem;
+        overflow: auto;
     }
 }
