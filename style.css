@@ -681,7 +681,7 @@ td:not([colspan="2"]) + td {
     text-decoration: none;
     font-weight: 700;
     font-size: 2rem;
-    transition: 0.5s ease-in-out, color 0.6s ease-in-out;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .divButton2:hover {
