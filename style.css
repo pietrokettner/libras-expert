@@ -986,14 +986,14 @@ footer {
 
     .backgroundAzulEscuro2::after {
         content: '';
-        /* position: absolute; */
-        /* left: 100%; */
-        /* top: 0%; */
-        /* width: 33.5%; */
-        /* height: 30.3vh; */
-        /* background: inherit; */
-        /* z-index: -1; */
-        /* overflow: hidden; */
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        width: 0%;
+        height: 30.3vh;
+        background: inherit;
+        z-index: -1;
+        overflow: hidden;
     }
 
     .backgroundAzulEscuro2::before {
@@ -1041,6 +1041,10 @@ footer {
     .divButton {
         width: 100%;
         margin-bottom: -3rem;
+    }
+
+    .imagem1 {
+        margin-top: auto;
     }
 
     .rowVideoCurso {
@@ -1228,8 +1232,16 @@ footer {
         margin-left: 1.5rem;
     }
 
+    .divGeralFormulario {
+        margin-top: 4rem;
+    }
+
     footer {
-        margin-top: 11rem;
+        margin-top: 13rem;
+    }
+
+    .dinamicBox p {
+        font-size: 1rem;
     }
 }
 
@@ -1325,11 +1337,11 @@ footer {
     }
 
     .containerGeralFormulario {
-        margin-top: 16rem;
+        margin-top: 13rem;
     }
 
     footer {
-        margin-top: 15rem;
+        margin-top: 17rem;
     }
 
     #mauticform_input_formulariolibrasexpert_submit {
