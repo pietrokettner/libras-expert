@@ -691,11 +691,7 @@ td:not([colspan="2"]) + td {
 }
 
 .buttonAncora:hover {
-    background: linear-gradient(45deg, #E44C4B, #C41C27, #F33A3E, whitesmoke);
-    background-clip: text;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    color: whitesmoke;
     transition: 0.5s ease-in-out;
     text-decoration: none;
 }
@@ -827,7 +823,7 @@ footer {
 
 
 
-/* mobile */
+/* midia querys */
 @media (width: 2560px) {
     .backgroundAzulEscuro::before {
         left: -63%;
@@ -978,7 +974,7 @@ footer {
     }
 }
 
-
+/* mobile */
 @media (max-width: 1115px) {
     body {
         width: -webkit-fill-available;
