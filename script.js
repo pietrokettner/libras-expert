@@ -3,7 +3,7 @@ function rearrangeContentForMobile() {
     const dynamicBoxes = document.querySelectorAll('.dinamicBox');
     const mainContainer = document.querySelector('section');
     
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1124) {
         dynamicBoxes.forEach(box => {
             const targetId = box.id;
             const button = document.querySelector(`.toggleButton[data-target="${targetId}"]`);
